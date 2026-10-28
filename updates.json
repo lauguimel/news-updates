@@ -1,7 +1,18 @@
 {
   "addons": {
     "news@guillaume.local": {
-      "updates": []
+      "updates": [
+        {
+          "version": "0.6.0",
+          "update_link": "https://github.com/lauguimel/news-updates/releases/download/v0.6.0/news-0.6.0.xpi",
+          "update_hash": "sha256:0158d41e65fba8c07d05ecf689b49e06dbe0dc6969665c4d6643f4a0f6a08e44",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "140.0"
+            }
+          }
+        }
+      ]
     }
   }
 }
