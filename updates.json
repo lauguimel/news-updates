@@ -21,6 +21,16 @@
               "strict_min_version": "140.0"
             }
           }
+        },
+        {
+          "version": "0.6.2",
+          "update_link": "https://github.com/lauguimel/news-updates/releases/download/v0.6.2/news-0.6.2.xpi",
+          "update_hash": "sha256:636da06c3b4ee7506332be46e429bd07a7459a1bfd96c131550e5dfe43ff35d8",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "140.0"
+            }
+          }
         }
       ]
     }
