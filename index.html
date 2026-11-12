@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#111214">
+  <title>News</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <style>
+    :root { color-scheme: dark; }
+    html, body { margin: 0; min-height: 100%; background: #111214; color: #e4e4e4;
+      font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 32rem; margin: 0 auto; padding: 22vh 16px 32px; text-align: center; }
+    img { width: 72px; height: 72px; border-radius: 14px; }
+    h1 { font-size: 1.4rem; font-weight: 600; margin: 16px 0 12px; }
+    p { margin: 0 0 12px; color: #9a9ea6; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="icon-192.png" alt="">
+    <h1>Ouverture de News…</h1>
+    <p>Cette page sert de raccourci vers l'extension Firefox « News ». Si elle reste affichée, l'extension n'est pas installée dans ce Firefox, ou pas dans sa version 0.6.2 ou plus récente, ou l'adresse se termine par « #ajouter ».</p>
+    <p>Pour un raccourci sur l'écran d'accueil : ouvre cette page avec « #ajouter » à la fin de l'adresse (News la laisse alors affichée), puis menu ⋮ de Firefox → « Ajouter à l'écran d'accueil ».</p>
+  </main>
+  <script>
+    // Opened as .../#ajouter: drop the hash so the home-screen shortcut gets the plain address.
+    if (location.hash === "#ajouter") history.replaceState(null, "", location.pathname);
+  </script>
+</body>
+</html>
